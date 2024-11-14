@@ -3,6 +3,14 @@
 * 2 Separate OpenShift Clusters (Manager Cluster, Worker Cluster)
 * A Kube Config file authenticated to both Clusters
 
+## NOTE:
+* I have insecure-skip-tls-verify: true set in the shared config file (Not good but I will look into using certs)
+* This is Kueue V0.9.0 (Multi Kueue enabled by default + KFTO supported)
+* The installation of the MPI Operator was mandatory for MPI Jobs (Not ideal)
+* Had to make alterations to the kube config file script so it worked on OpenShift
+* NO RHOAI installed -> This is because v0.8.X of Kueue does not support KFTO Jobs
+
+
 ## Setup
 * Gather the context for both OpenShift clusters. 
   e.g.
