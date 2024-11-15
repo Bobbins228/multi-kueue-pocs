@@ -4,7 +4,7 @@
 * A Kube Config file authenticated to both Clusters
 
 ## NOTE:
-* I have insecure-skip-tls-verify: true set in the shared config file (Not good but I will look into using certs)
+* ~~I have insecure-skip-tls-verify: true set in the shared config file (Not good but I will look into using certs)~~
 * This is Kueue V0.9.0 (Multi Kueue enabled by default + KFTO supported)
 * The installation of the MPI Operator was mandatory for MPI Jobs (Not ideal)
 * Had to make alterations to the kube config file script so it worked on OpenShift

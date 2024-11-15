@@ -215,7 +215,7 @@ cat > "${KUBECONFIG_OUT}" <<EOF
 apiVersion: v1
 clusters:
 - cluster:
-    insecure-skip-tls-verify: true
+    certificate-authority-data: ${CA_CERT}
     server: ${CURRENT_CLUSTER_ADDR}
   name: ${CURRENT_CLUSTER}
 contexts:
