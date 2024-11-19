@@ -34,6 +34,7 @@ kubectl delete ServiceAccount $MULTIKUEUE_SA
 
 kubectl delete -f https://raw.githubusercontent.com/kubeflow/mpi-operator/v0.6.0/deploy/v2beta1/mpi-operator.yaml
 kubectl delete -k "github.com/kubeflow/training-operator.git/manifests/overlays/standalone?ref=v1.8.0"
+kubectl delete -f https://github.com/kubernetes-sigs/jobset/releases/download/v0.7.0/manifests.yaml
 kubectl delete -f kueue-resources/single-clusterqueue-setup.yaml
 
 kubectl delete -f https://github.com/kubernetes-sigs/kueue/releases/download/v0.9.0/manifests.yaml
@@ -42,4 +43,5 @@ kubectl config use-context $MANAGER_CONTEXT
 
 kubectl delete -f https://raw.githubusercontent.com/kubeflow/mpi-operator/v0.6.0/deploy/v2beta1/mpi-operator.yaml
 kubectl delete -k "github.com/kubeflow/training-operator.git/manifests/base/crds?ref=v1.8.0"
+kubectl delete -f https://github.com/kubernetes-sigs/jobset/releases/download/v0.7.0/manifests.yaml
 kubectl delete -f https://github.com/kubernetes-sigs/kueue/releases/download/v0.9.0/manifests.yaml

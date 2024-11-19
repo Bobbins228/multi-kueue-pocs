@@ -1,7 +1,7 @@
 # Multi Kueue on OpenShift
 ## Prerequisites 
 * 2 Separate OpenShift Clusters (Manager Cluster, Worker Cluster)
-* A Kube Config file authenticated to both Clusters
+* A Kube Config file authenticated to both Clusters (Delete your old `~/.kube/config` file first!)
 
 ## NOTE:
 * ~~I have insecure-skip-tls-verify: true set in the shared config file (Not good but I will look into using certs)~~
